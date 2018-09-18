@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8122CC2721517B40003A6DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC2621517B40003A6DB3 /* AppDelegate.swift */; };
-		8122CC2921517B40003A6DB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC2821517B40003A6DB3 /* ViewController.swift */; };
+		8122CC2921517B40003A6DB3 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC2821517B40003A6DB3 /* ForecastViewController.swift */; };
 		8122CC2C21517B40003A6DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8122CC2A21517B40003A6DB3 /* Main.storyboard */; };
 		8122CC2E21517B42003A6DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8122CC2D21517B42003A6DB3 /* Assets.xcassets */; };
 		8122CC3121517B42003A6DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8122CC2F21517B42003A6DB3 /* LaunchScreen.storyboard */; };
+		8122CC3921517F34003A6DB3 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC3821517F34003A6DB3 /* NetworkHelper.swift */; };
+		8122CC3B21518008003A6DB3 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC3A21518008003A6DB3 /* Forecast.swift */; };
+		8122CC3D2151810E003A6DB3 /* AerisAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC3C2151810E003A6DB3 /* AerisAPI.swift */; };
+		8122CC4421518B7A003A6DB3 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122CC4221518B7A003A6DB3 /* ForecastCell.swift */; };
+		8122CC4521518B7A003A6DB3 /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8122CC4321518B7A003A6DB3 /* ForecastCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8122CC2321517B40003A6DB3 /* NYForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8122CC2621517B40003A6DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8122CC2821517B40003A6DB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8122CC2821517B40003A6DB3 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		8122CC2B21517B40003A6DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8122CC2D21517B42003A6DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8122CC3021517B42003A6DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8122CC3221517B42003A6DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8122CC3821517F34003A6DB3 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		8122CC3A21518008003A6DB3 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		8122CC3C2151810E003A6DB3 /* AerisAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerisAPI.swift; sourceTree = "<group>"; };
+		8122CC4221518B7A003A6DB3 /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
+		8122CC4321518B7A003A6DB3 /* ForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				8122CC2621517B40003A6DB3 /* AppDelegate.swift */,
-				8122CC2821517B40003A6DB3 /* ViewController.swift */,
+				8122CC2821517B40003A6DB3 /* ForecastViewController.swift */,
 				8122CC2A21517B40003A6DB3 /* Main.storyboard */,
 				8122CC2D21517B42003A6DB3 /* Assets.xcassets */,
 				8122CC2F21517B42003A6DB3 /* LaunchScreen.storyboard */,
 				8122CC3221517B42003A6DB3 /* Info.plist */,
+				8122CC3821517F34003A6DB3 /* NetworkHelper.swift */,
+				8122CC3A21518008003A6DB3 /* Forecast.swift */,
+				8122CC3C2151810E003A6DB3 /* AerisAPI.swift */,
+				8122CC4221518B7A003A6DB3 /* ForecastCell.swift */,
+				8122CC4321518B7A003A6DB3 /* ForecastCell.xib */,
 			);
 			path = NYForecast;
 			sourceTree = "<group>";
@@ -122,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8122CC4521518B7A003A6DB3 /* ForecastCell.xib in Resources */,
 				8122CC3121517B42003A6DB3 /* LaunchScreen.storyboard in Resources */,
 				8122CC2E21517B42003A6DB3 /* Assets.xcassets in Resources */,
 				8122CC2C21517B40003A6DB3 /* Main.storyboard in Resources */,
@@ -135,7 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8122CC2921517B40003A6DB3 /* ViewController.swift in Sources */,
+				8122CC3D2151810E003A6DB3 /* AerisAPI.swift in Sources */,
+				8122CC3B21518008003A6DB3 /* Forecast.swift in Sources */,
+				8122CC2921517B40003A6DB3 /* ForecastViewController.swift in Sources */,
+				8122CC3921517F34003A6DB3 /* NetworkHelper.swift in Sources */,
+				8122CC4421518B7A003A6DB3 /* ForecastCell.swift in Sources */,
 				8122CC2721517B40003A6DB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

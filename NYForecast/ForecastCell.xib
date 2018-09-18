@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ForecastCell" id="gTV-IL-0wX" customClass="ForecastCell" customModule="NYForecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="275"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-c1-5rr">
+                        <rect key="frame" x="25.5" y="12" width="205" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="veB-0h-DI9">
+                        <rect key="frame" x="92.5" y="60.5" width="72" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="KhL-Af-2Qt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lE2-jK-Lp1">
+                        <rect key="frame" x="26" y="154.5" width="205" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-wL-UPa">
+                        <rect key="frame" x="26" y="186" width="205" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcu-zb-5ae">
+                        <rect key="frame" x="40" y="225" width="176" height="30"/>
+                        <state key="normal" title="Convert"/>
+                        <connections>
+                            <action selector="convertButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vYA-5P-qvq"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lE2-jK-Lp1" firstAttribute="width" secondItem="TS4-c1-5rr" secondAttribute="width" id="3p7-Ag-br7"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Vcu-zb-5ae" secondAttribute="trailing" constant="40" id="7oy-nD-fD3"/>
+                <constraint firstItem="QiA-wL-UPa" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="8pH-Ic-Sv6"/>
+                <constraint firstItem="Vcu-zb-5ae" firstAttribute="height" secondItem="QiA-wL-UPa" secondAttribute="height" id="8ty-Ps-Ks3"/>
+                <constraint firstItem="lE2-jK-Lp1" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="O6u-sM-LmR"/>
+                <constraint firstItem="Vcu-zb-5ae" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="40" id="T1h-nK-3c2"/>
+                <constraint firstItem="TS4-c1-5rr" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="Z0F-Nf-fYO"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="Vcu-zb-5ae" secondAttribute="bottom" constant="20" id="b4F-Wp-FDN"/>
+                <constraint firstItem="TS4-c1-5rr" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="12" id="hYc-gQ-2uc"/>
+                <constraint firstItem="QiA-wL-UPa" firstAttribute="width" secondItem="lE2-jK-Lp1" secondAttribute="width" id="j7F-9X-IAU"/>
+                <constraint firstItem="lE2-jK-Lp1" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" multiplier="1.2" id="mBL-iC-bfg"/>
+                <constraint firstItem="veB-0h-DI9" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.28" id="mBT-Fo-Yp9"/>
+                <constraint firstItem="veB-0h-DI9" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" multiplier="0.64" id="ovn-7i-1Yi"/>
+                <constraint firstItem="TS4-c1-5rr" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="qIm-Ud-h53"/>
+                <constraint firstItem="veB-0h-DI9" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="rbM-8e-6m5"/>
+                <constraint firstItem="Vcu-zb-5ae" firstAttribute="top" secondItem="QiA-wL-UPa" secondAttribute="bottom" constant="9" id="ruN-ey-7qz"/>
+                <constraint firstItem="TS4-c1-5rr" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" multiplier="0.2" id="tPA-7s-TkQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="256" height="275"/>
+            <connections>
+                <outlet property="dateLabel" destination="TS4-c1-5rr" id="JuY-WE-vpq"/>
+                <outlet property="highLabel" destination="lE2-jK-Lp1" id="mHt-Xg-pND"/>
+                <outlet property="imageView" destination="veB-0h-DI9" id="L2T-1e-F4t"/>
+                <outlet property="lowLabel" destination="QiA-wL-UPa" id="w3L-cT-vjc"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="22.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
